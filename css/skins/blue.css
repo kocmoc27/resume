@@ -1,0 +1,170 @@
+body {
+  color: #222;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #1979ca;
+}
+
+p, body .main_footer,
+.s_about li {
+  color: #888;
+}
+
+.color_element {
+  color: #1979ca;
+}
+
+.color_bg {
+  background-color: #1979ca;
+}
+
+.color_border {
+  border-color: #1979ca;
+}
+
+.bg_light {
+  background-color: #FAFAFA;
+}
+
+.bg_dark {
+  background-color: #222;
+  color: #FFF;
+}
+
+.bg_dark .s_descr_wrap .s_descr::after {
+  background-color: #FFF;
+}
+
+.bg_dark a {
+  color: #FFF;
+}
+
+.toggle_mnu {
+  background-color: #222;
+}
+
+.top_mnu a {
+  letter-spacing: 4px;
+}
+
+.top_mnu a:hover {
+  color: #1979ca;
+}
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px;
+}
+
+.s_descr_wrap .s_descr {
+  letter-spacing: 5px;
+}
+
+.s_descr_wrap .s_descr::after {
+  background-color: #222;
+}
+
+section h3 {
+  letter-spacing: 5px;
+  color: #888;
+}
+
+.s_about p:nth-child(odd) {
+  color: #1979ca;
+}
+
+.personal_header {
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.social_wrap li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 3px;
+}
+
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.resume_container .resume_item {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.resume_container .resume_item .year {
+  background-color: #1979ca;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+}
+
+.resume_container .resume_item .resume_description {
+  font-style: italic;
+}
+
+.s_portfolio li {
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.s_portfolio li.active {
+  color: #FFF;
+  border-bottom: 1px solid #1979ca;
+}
+
+.s_portfolio .portfolio_item .portfolio_item_content h3 {
+  color: #FFF;
+}
+
+.s_portfolio .portfolio_item .portfolio_item_content a {
+  border: solid 1px #1979ca;
+  color: #1979ca;
+}
+
+.main_footer .social_wrap a {
+  color: #1979ca;
+}
+
+.contact_container .contact_icon, .contact_container a {
+  color: #1979ca;
+}
+
+.contact_container h3 {
+  letter-spacing: 1px;
+}
+
+.contact_container span.color_element {
+  color: #1979ca;
+  font-size: 18px;
+}
+
+.text-danger {
+  color: #1979ca;
+}
+
+form .form-group {
+  letter-spacing: 2px;
+  color: #888;
+}
+
+form input:focus, form textarea:focus {
+  border: 1px solid #1979ca;
+}
+
+form input, form textarea {
+  letter-spacing: 2px;
+}
+
+form input[type="submit"] {
+  border: none;
+  background-color: #1979ca;
+  color: #FFF;
+  letter-spacing: 2px;
+}

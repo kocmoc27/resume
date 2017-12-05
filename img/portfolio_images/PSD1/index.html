@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="1.css">
+	
+	<script type="text/javascript" src="jquery.1.7.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Фикмированная шапка при скролле
+			$("#header").removeClass("default");
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 20) {
+					$("#header").addClass("default").fadeIn('fast');
+				} else {
+					$("#header").removeClass("default").fadeIn('fast');
+				};
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a[href^="#"]').click(function(){
+				elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){$('body').animate({scrollTop:destination}, 1000);}
+				else{$('html').animate({scrollTop: destination}, 1000);}
+				return false;
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header" class="default">
+			<div class="container clearfix">
+				<div class="logo"><a href=""><img src="logo.png" alt="" height="28" width="79"></a></div>
+				<ul class="nav">
+					<li><a href="#home">home</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#contact">contacts</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="home">
+			<div class="container">
+				<h3>Welcome To Our Studio!</h3>
+				<h1>It’s nice to Meet you</h1>
+				<button class="btn">Tell Me More</button>
+			</div>
+		</div>
+		
+		<div id="services" class="box">
+		<div class="container">
+			<h2 class="title">Services</h2>
+			<p class="descr">Proin iaculis purus consequat sem cure. </p>
+			
+			<div class="services-wrap clearfix">
+				<div class="services-item commerce">
+					<h5 class="title">E-commerce</h5>	
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>				
+				</div>
+				<div class="services-item responsive">
+					<h5 class="title">Responsive Web</h5>	
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>				
+				</div>
+				<div class="services-item security">
+					<h5 class="title">Web Security</h5>	
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>				
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div id="portfolio" class="box">
+		<div class="container">
+			<h2 class="title">our Portfolio</h2>
+			<p class="descr">Proin iaculis purus consequat sem cure. </p>
+			
+			<div class="portfolio-wrap clearfix">
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<a href=""><img src="p-item-1.jpg" alt="" height="300" width="291"></a>
+					<div class="p-item-footer">
+						<h5 class="title">Ebony & Ivory</h5>
+						<span>Branding</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+
+		<div id="about" name="about" class="box">
+		<div class="container">
+			<h2 class="title">About us</h2>
+			<p class="descr">Proin iaculis purus consequat sem cure. </p>
+			
+			<div class="about-wrap clearfix">
+				<div class="about-item clearfix">
+					<div class="about-text left text-right">
+						<h5 class="title">July 2010 <br> Our Humble Beginnings</h5>
+						<p class="descr">Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit 
+							aenean rhoncus posuere odio in tincidunt. Proin 
+							iaculis purus consequat sem cure digni 
+							ssim. Done c porttitora entum suscipit.</p>
+					</div>
+					<div class="about-img left"><img src="Image.png" alt=""></div>
+				</div>
+
+				<div class="about-item clearfix">
+					<div class="about-text right text-left">
+						<h5 class="title">July 2010 <br> Our Humble Beginnings</h5>
+						<p>Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit 
+							aenean rhoncus posuere odio in tincidunt. Proin 
+							iaculis purus consequat sem cure digni 
+							ssim. Done c porttitora entum suscipit.</p>
+					</div>
+					<div class="about-img right"><img src="Image.png" alt=""></div>
+				</div>
+
+				<div class="about-item clearfix">
+					<div class="about-text left text-right ">
+						<h5 class="title"> <span>July 2010</span><br> Our Humble Beginnings</h5>
+						<p>Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit 
+							aenean rhoncus posuere odio in tincidunt. Proin 
+							iaculis purus consequat sem cure digni 
+							ssim. Done c porttitora entum suscipit.</p>
+					</div>
+				<div class="about-img left"><img src="Image.png" alt=""></div>
+				</div>
+				
+				<div class="about-item clearfix">
+					<div class="about-text right text-left">
+						<h5 class="title">July 2010 <br> Our Humble Beginnings</h5>
+						<p>Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit 
+							aenean rhoncus posuere odio in tincidunt. Proin 
+							iaculis purus consequat sem cure digni 
+							ssim. Done c porttitora entum suscipit.</p>
+					</div>
+					<div class="about-img right"><img src="Image.png" alt=""></div>
+				</div>
+
+				<a href="" class="about-link">Our <br/>Story <br>Continues <br> ... </a>
+			</div>
+		</div>
+		</div>
+
+		<div id="team" class="box">
+		<div class="container">
+			<h2 class="title">our amazing team</h2>
+			<p class="descr">Proin iaculis purus consequat sem cure. </p>
+				<div class="team-wrap clearfix">
+					<div class="team-item">
+						<img src="team.png" alt="" height="220" width="220">
+						<h5 class="title">Kimberley Thompson</h5>
+						<p class="cat">Marketer</p>
+						<div class="social">
+							<a href="" class="ic-tw">&nbsp;</a>
+							<a href="" class="ic-fb">&nbsp;</a>
+							<a href="" class="ic-pn">&nbsp;</a>
+						</div>
+					</div>
+					<div class="team-item">
+						<img src="team.png" alt="" height="220" width="220">
+						<h5 class="title">Kimberley Thompson</h5>
+						<p class="cat">Marketer</p>
+						<div class="social">
+							<a href="" class="ic-tw">&nbsp;</a>
+							<a href="" class="ic-fb">&nbsp;</a>
+							<a href="" class="ic-pn">&nbsp;</a>
+						</div>
+					</div>
+					<div class="team-item">
+						<img src="team.png" alt="" height="220" width="220">
+						<h5 class="title">Kimberley Thompson</h5>
+						<p class="cat">Marketer</p>
+						<div class="social">
+							<a href="" class="ic-tw">&nbsp;</a>
+							<a href="" class="ic-fb">&nbsp;</a>
+							<a href="" class="ic-gl">&nbsp;</a>
+						</div>
+					</div>
+
+				</div>	
+				<p class="descr team-info">Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit <br>
+							aenean rhoncus posuere odio in tincidunt. Proin 
+							iaculis.</p>				
+		</div>
+		</div>	
+
+		<div id="brand">
+			<div class="container">
+				<a href=""><img src="wp.png" height="30" width="161"></a>
+				<a href=""><img src="wp.png" height="30" width="161"></a>
+				<a href=""><img src="wp.png" height="30" width="161"></a>
+				<a href=""><img src="wp.png" height="30" width="161"></a>
+			</div>
+		</div>
+		
+		<div id="contact" name="contact" class="box">
+		<div class="container">
+		<h2 class="title">Contact us</h2>
+			<p class="descr">Proin iaculis purus consequat sem cure. </p>		
+			<form action="#" id="message">
+				<div class="clearfix">
+					<div class="left">
+						<input type="text"	placeholder="Your name*">
+						<input type="text"	placeholder="Your e-mail*">
+						<input type="text"	placeholder="Subject*">
+					</div>
+					<div class="right">
+						<textarea cols="0" rows="0"></textarea>
+					</div>
+
+				</div>
+				<input type="submit" value="Send Message" class="btn">
+				
+			</form>			
+		</div>
+		</div>	
+
+		<div id="copyright">
+		<div class="container">
+			<p class="left">&copy; Copyright 2014 FreebiesXpress.com</p>
+		
+		<div class="social">
+			<a href="" class="ic-tw black">&nbsp;</a>
+			<a href="" class="ic-fb black">&nbsp;</a>
+			<a href="" class="ic-pn black">&nbsp;</a>
+			<a href="" class="ic-gl black">&nbsp;</a>
+		</div>
+		</div></div>
+	</div>
+	
+	
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="jquery.1.7.1.min.js"></script>
+</body>
+</html>
